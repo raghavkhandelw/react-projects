@@ -1,3 +1,31 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #1ff1e1;
+  color: white;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+h1 {
+  text-align: center;
+}
+
+.todo-wrapper {
+  background: #353434;
+  padding: 2%;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  border-radius: 10px;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +63,84 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.todo-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.todo-input-item {
+  margin-bottom: 10px;
+}
+
+.todo-input-item label {
+  margin-right: 10px;
+}
+
+.todo-input-item input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+}
+
+.primaryBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #61dafb;
+  border: none;
+  color: #282c34;
+  cursor: pointer;
+}
+
+.primaryBtn:hover {
+  background-color: #21a1f1;
+}
+
+.btn-area {
+  margin: 20px 0;
+}
+
+.btn-area button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.todo-list {
+  margin-top: 20px;
+}
+
+.task {
+  background: #444;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.task.completed h3 {
+  text-decoration: line-through;
+}
+
+.task h3 {
+  cursor: pointer;
+}
+
+.task p {
+  margin: 5px 0;
+}
+
+.task button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.task button:hover {
+  background: darkred;
 }
